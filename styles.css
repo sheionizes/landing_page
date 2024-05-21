@@ -24,21 +24,29 @@ body {
 .right {
     display: flex;
     padding-right: 100px;
-    gap: 8px;
     color: #E5E7EB;
+    gap: 16px; /* why can't I get a gap between the links?*/
     /*padding: 16px;*/
 }
 
-a {
+li {
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
+    gap: 16px;
 
 }
-
-.
 
 .container {
     display: flex;
     flex: 1;
+}
+
+.container .left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1; /* how to create another container within*/
 }
 
 .footer,
